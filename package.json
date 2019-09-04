@@ -1,0 +1,34 @@
+{
+  "name": "instagrab",
+  "version": "1.0.0",
+  "description": "Simple project to download instagram profile picture and view basic profile details",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishisundar/Instagrab.git"
+  },
+  "keywords": [
+    "Instagram"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishisundar/Instagrab/issues"
+  },
+  "homepage": "https://github.com/rishisundar/Instagrab#readme",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
